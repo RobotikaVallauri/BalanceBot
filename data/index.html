@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BalanceBot</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+</head>
+
+<body style="overflow-y: hidden;">
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation" style="height: 8vh;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="height: 8vh;"><strong>BalanceBot</strong></a>
+            </div>
+
+            </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" id="btn-grafico" href="#"><i class="fa fa-dashboard"></i>Grafico</a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-gioco"><i class="fa fa-desktop"></i>Gioco</a>
+                    </li>
+					 <li>
+                        <a href="#" id="btn-reset"><i class="fa fa-cog"></i>Reset sensore</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper" style="height:92vh;padding:0px;min-height:0px">
+		<div style="height:100%;">
+			<iframe src="grafico.html" id="iframe-pagina" style="height:100%;width:100%"></iframe>
+			</div>
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery.js"></script>
+	
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+	<script src="index.js"></script>
+    
+
+</body>
+
+</html>
